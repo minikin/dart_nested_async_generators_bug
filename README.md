@@ -9,7 +9,7 @@
 - Steps to replicate the behavior
 
   1. Run the app.
-  2. Press the `Correct button five times.
+  2. Press the `Correct` button five times.
   3. Press the `Wrong` button five times.
 
 - Errors received
