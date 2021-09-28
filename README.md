@@ -1,6 +1,4 @@
-# dart_nested_async_generators_bug
-
-If you could provide the following details, this will help me troubleshoot the issue.
+# Unexpected Behavior with Nested Async Generators in Dart.
 
 - Minimal repro
 
@@ -9,10 +7,11 @@ If you could provide the following details, this will help me troubleshoot the i
 - Steps to replicate the behavior
 
   1. Run app
-  2. Press `Corret` button
-  3. Press `Wrong` button
+  2. Press `Corret` button five times
+  3. Press `Wrong` button five times
 
 - Errors received
+  Both actions shoul produce the same results. In reality `Correct` produse [1,2,3,4,5,6,7,8,9, 10] and `Wrong` produces [1,1,2,2,3,3,4,4,5,5].
 
 - Plugins used and its versions
 
@@ -61,3 +60,5 @@ If you could provide the following details, this will help me troubleshoot the i
 
   • No issues found!
   ```
+
+https://github.com/dart-lang/sdk/issues/44616
